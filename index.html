@@ -529,6 +529,12 @@ function renderTeachers(){
 function contactAbout(code){
   const t = TEACHERS.find(x=>x.code===code);
   if(!t) return;
+  gtag('event', 'whatsapp_click', {
+  teacher_code: t.code,
+  teacher_name: t.name,
+  subject: t.subject,
+  region: t.region
+});
   const cleanPhone = t.phone.replace(/[^0-9]/g,'');
   const msg = `Salam, USTAD saytında ${t.name} (${t.subject}) müəllimi ilə bağlı məlumat almaq istəyirəm.`;
   window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`, '_blank');
