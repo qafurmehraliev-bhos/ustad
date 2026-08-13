@@ -246,6 +246,143 @@
     font-family:'IBM Plex Mono', monospace; font-size:13px; cursor:pointer; text-decoration:none;
   }
   .video-link-btn:hover{ opacity:0.9; }
+  /* ===== MOBİL RESPONSIVE ===== */
+
+@media (max-width: 760px){
+
+  .wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  /* Navbar */
+  .nav-row{
+    padding:14px 0;
+  }
+
+  .nav-links{
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+
+  .nav-links a{
+    font-size:11px;
+  }
+
+  .nav-cta{
+    padding:7px 11px;
+    font-size:10px;
+  }
+
+  /* Hero */
+  .hero{
+    padding:38px 0 28px;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+
+  .hero p.lede{
+    font-size:14px;
+  }
+
+  /* Filter */
+  .filter-bar{
+    grid-template-columns:1fr;
+    padding:14px;
+  }
+
+  .filter-reset{
+    grid-column:auto;
+    width:100%;
+  }
+
+  /* VIP */
+  .vip-section{
+    padding-top:34px;
+  }
+
+  .vip-head{
+    display:block;
+  }
+
+  .vip-head h2{
+    font-size:21px;
+    margin-bottom:10px;
+  }
+
+  /* Teacher cards */
+  .teacher-grid{
+    grid-template-columns:1fr;
+  }
+
+  .teacher-card{
+    padding:20px 18px;
+  }
+
+  /* Section headings */
+  .section-head{
+    padding:34px 0 16px;
+  }
+
+  .section-head h2{
+    font-size:21px;
+  }
+
+  /* Announcements */
+  .announce-entry{
+    flex-direction:column;
+    gap:14px;
+    padding:18px 14px;
+  }
+
+  .announce-cta{
+    width:100%;
+    text-align:center;
+  }
+
+  /* About */
+  .about-section{
+    padding:38px 0;
+  }
+
+  /* Become teacher */
+  .cta-section{
+    margin-top:40px;
+    padding:36px 20px;
+  }
+
+  .cta-section h2{
+    font-size:24px;
+  }
+
+  .whatsapp-btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  /* Footer */
+  footer{
+    padding:36px 0 45px;
+    flex-direction:column;
+  }
+
+  /* Floating button */
+  #ustadWidgetBtn{
+    width:52px;
+    height:52px;
+    right:16px;
+    bottom:16px;
+  }
+
+  #ustadWidgetPanel{
+    right:16px;
+    bottom:80px;
+    width:calc(100vw - 32px);
+  }
+}
 </style>
 </head>
 <body>
